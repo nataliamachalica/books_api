@@ -9,8 +9,6 @@ describe('CutText', () => {
     expect(cutText({}, 20)).to.equal('Error');
     expect(cutText([], 20)).to.equal('Error');
     expect(cutText(function() {}, 20)).to.equal('Error');
-	//sprawdzenie undefined, number, object, array, function - czyli różne od stringa
-	// 20 to pierwsza lepsza poprawna wartość argumentu, aby zawsze był prawidłowy
 	});
 
 	it('should return an error if "content" arg length is 0', () => {
